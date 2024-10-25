@@ -285,18 +285,23 @@ footer {
     #benefits {
         display: flex;
         flex-direction: row;
-        width: auto;
     }
-    #benefits-physical {
-        order: 1;
+    #benefits > div {
+        flex: 1;
     }
     #benefits-image {
-        order: 2;
-    }
-    #benefits-mental {
-        order: 3;
+        order: 0;
     }
     
+    #benefits-mental {
+        order: 1;
+    }
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
    }
 
 }
